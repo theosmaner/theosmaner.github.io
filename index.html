@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-UZYhjQy7FGn0QNbZPgDJq98J9LKvKmFvo6BGEIuCras='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-UZYhjQy7FGn0QNbZPgDJq98J9LKvKmFvo6BGEIuCras='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Osman Er</title>
 <meta name="description" content="Osman Er — Aydın Adnan Menderes Üniversitesi Biyosistem Mühendisliği öğrencisi.">
@@ -160,6 +160,18 @@
   .brand .tag { font-size: 10px; padding: 2px 8px; }
   @media (max-width: 520px) { .brands { grid-template-columns: 1fr 1fr; } .brand-body { flex-direction: column; align-items: flex-start; gap: 6px; } }
 
+  /* Projects */
+  .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .project { background: var(--card-2); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: border-color .4s var(--ease), transform .5s var(--ease); }
+  .project:hover { border-color: rgba(228, 255, 26, .45); }
+  .project-media { position: relative; aspect-ratio: 16 / 9; background: #000; }
+  .project-media video, .project-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .project-body { padding: 20px 22px 22px; display: grid; gap: 10px; }
+  .project-body h3 { font-size: 19px; font-weight: 700; letter-spacing: -.015em; }
+  .project-body p { color: var(--dim); font-size: 15px; }
+  .project-body .pdate { color: var(--faint); font-size: 13.5px; }
+  @media (max-width: 700px) { .projects { grid-template-columns: 1fr; } }
+
   /* Contact */
   .mail-card {
     display: flex; align-items: center; gap: 18px; padding: 22px 24px; border-radius: 20px;
@@ -274,6 +286,49 @@
         <p>Elektrik-Elektronik Bölümü · Endüstriyel Bakım Onarım Dalı · Menteşe, Muğla</p>
       </li>
     </ol>
+  </section>
+
+  <section class="card section" id="projeler" data-reveal>
+    <div class="section-top">
+      <div>
+        <p class="eyebrow">Projelerim</p>
+        <h2>Arduino projeleri</h2>
+      </div>
+    </div>
+    <div class="projects">
+      <article class="project" data-reveal style="--d:0s">
+        <div class="project-media"><img src="proje-led.jpg" alt="Breadboard üzerinde yanan yeşil LED ve Arduino Uno" loading="lazy" style="object-position:50% 52%"></div>
+        <div class="project-body">
+          <div class="tags"><span class="tag">Arduino</span><span class="tag">LED</span></div>
+          <h3>Arduino ile LED Yakma</h3>
+          <p>İlk Arduino projem.</p><p class="pdate">Şubat 2022</p>
+        </div>
+      </article>
+      <article class="project" data-reveal style="--d:0.08s">
+        <div class="project-media"><video src="proje-karasimsek.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
+        <div class="project-body">
+          <div class="tags"><span class="tag">Arduino</span><span class="tag">LED</span><span class="tag">Breadboard</span></div>
+          <h3>Karaşimşek Devresi</h3>
+          <p>LED'lerin sırayla yanıp sönerek ileri geri kaydığı karaşimşek devresi.</p>
+        </div>
+      </article>
+      <article class="project" data-reveal style="--d:0s">
+        <div class="project-media"><video src="proje-kizilotesi.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
+        <div class="project-body">
+          <div class="tags"><span class="tag">Arduino</span><span class="tag">Kızılötesi sensör</span></div>
+          <h3>Kızılötesi Sensör Kullanımı</h3>
+          <p>Arduino ile kızılötesi sensör kullanımı.</p><p class="pdate">Şubat 2022</p>
+        </div>
+      </article>
+      <article class="project" data-reveal style="--d:0.08s">
+        <div class="project-media"><video src="proje-joystick.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
+        <div class="project-body">
+          <div class="tags"><span class="tag">Arduino</span><span class="tag">Joystick</span></div>
+          <h3>Joystick Kullanımı</h3>
+          <p>Arduino ile joystick kullanımı.</p><p class="pdate">Şubat 2022</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="card section about" id="hakkimda" data-reveal>
