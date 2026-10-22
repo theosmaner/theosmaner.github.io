@@ -166,6 +166,8 @@
   .project:hover { border-color: rgba(228, 255, 26, .45); }
   .project-media { position: relative; aspect-ratio: 16 / 9; background: #000; }
   .project-media video, .project-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .project-media.vertical { aspect-ratio: 9 / 16; }
+  .projects:has(> .project:only-child) { grid-template-columns: minmax(0, 360px); }
   .project-body { padding: 20px 22px 22px; display: grid; gap: 10px; }
   .project-body h3 { font-size: 19px; font-weight: 700; letter-spacing: -.015em; }
   .project-body p { color: var(--dim); font-size: 15px; }
@@ -292,40 +294,16 @@
     <div class="section-top">
       <div>
         <p class="eyebrow">Projelerim</p>
-        <h2>Arduino projeleri</h2>
+        <h2>Elektronik projeler</h2>
       </div>
     </div>
     <div class="projects">
-      <article class="project" data-reveal style="--d:0s">
-        <div class="project-media"><img src="proje-led.jpg" alt="Breadboard üzerinde yanan yeşil LED ve Arduino Uno" loading="lazy" style="object-position:50% 52%"></div>
+      <article class="project" data-reveal>
+        <div class="project-media vertical"><video src="proje-ac-dedektor.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
         <div class="project-body">
-          <div class="tags"><span class="tag">Arduino</span><span class="tag">LED</span></div>
-          <h3>Arduino ile LED Yakma</h3>
-          <p>İlk Arduino projem.</p><p class="pdate">Şubat 2022</p>
-        </div>
-      </article>
-      <article class="project" data-reveal style="--d:0.08s">
-        <div class="project-media"><video src="proje-karasimsek.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
-        <div class="project-body">
-          <div class="tags"><span class="tag">Arduino</span><span class="tag">LED</span><span class="tag">Breadboard</span></div>
-          <h3>Karaşimşek Devresi</h3>
-          <p>LED'lerin sırayla yanıp sönerek ileri geri kaydığı karaşimşek devresi.</p>
-        </div>
-      </article>
-      <article class="project" data-reveal style="--d:0s">
-        <div class="project-media"><video src="proje-kizilotesi.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
-        <div class="project-body">
-          <div class="tags"><span class="tag">Arduino</span><span class="tag">Kızılötesi sensör</span></div>
-          <h3>Kızılötesi Sensör Kullanımı</h3>
-          <p>Arduino ile kızılötesi sensör kullanımı.</p><p class="pdate">Şubat 2022</p>
-        </div>
-      </article>
-      <article class="project" data-reveal style="--d:0.08s">
-        <div class="project-media"><video src="proje-joystick.mp4#t=0.1" controls muted playsinline preload="metadata"></video></div>
-        <div class="project-body">
-          <div class="tags"><span class="tag">Arduino</span><span class="tag">Joystick</span></div>
-          <h3>Joystick Kullanımı</h3>
-          <p>Arduino ile joystick kullanımı.</p><p class="pdate">Şubat 2022</p>
+          <div class="tags"><span class="tag">Elektronik</span><span class="tag">Transistör</span><span class="tag">Breadboard</span></div>
+          <h3>AC Dedektör Devresi</h3>
+          <p>Yakınındaki alternatif akımı (AC) algılayan dedektör devresi.</p><p class="pdate">Nisan 2022</p>
         </div>
       </article>
     </div>
