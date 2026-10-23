@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="Z8jFR7uHZbg8UkfJcuKP2fa_giFkBEZorvnXccvNZX4" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-0c23ny3VfnKRUYXz7JHgy4kRaFtpbg0GhvOHiQFu9qc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-NUTeI2HqC5jS2GeRnislL/zAXkDua7VugpH/6VEHyOE='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Osman Er | Biyosistem Mühendisliği Öğrencisi</title>
 <meta name="description" content="Osman Er — Milas doğumlu, Aydın Adnan Menderes Üniversitesi Biyosistem Mühendisliği öğrencisi. Elektrik-elektronik lise mezunu (okul birincisi). Özgeçmiş, sertifikalar ve iletişim.">
@@ -251,6 +251,14 @@
   .zpanel p { color: var(--dim); font-size: 15px; margin-top: 6px; }
   .zvideo { margin-top: 16px; aspect-ratio: 9 / 16; max-height: 70dvh; margin-inline: auto; border-radius: 18px; overflow: hidden; background: #000; }
   .zvideo video { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .zhead-btns { display: flex; gap: 8px; }
+  #zmusic .off, #zmusic[aria-pressed="false"] .on { display: none; }
+  #zmusic[aria-pressed="false"] .off { display: block; }
+  .zgal { margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .zgal a { display: block; border-radius: 14px; overflow: hidden; background: #000; border: 1px solid var(--border); transition: border-color .3s; }
+  .zgal a:hover, .zgal a:focus-visible { border-color: rgba(228, 255, 26, .6); outline: none; }
+  .zgal img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .6s var(--ease); }
+  .zgal a:hover img { transform: scale(1.04); }
   .zsoon { margin-top: 16px; padding: 28px 20px; border: 1px dashed var(--border-2); border-radius: 18px; text-align: center; color: var(--faint); font-size: 15px; }
   @media (max-width: 460px) { .zchoices { grid-template-columns: 1fr; } .zhead { padding: 18px 18px 0; } .zbody { padding: 16px 18px 18px; } }
   @media (prefers-reduced-motion: reduce) { .zdlg[open] { animation: none; } .zchoice:hover { transform: none; } }
@@ -567,14 +575,18 @@
       <p class="eyebrow">Girişim</p>
       <h2 id="zeytico-title">Zeytico</h2>
     </div>
+    <div class="zhead-btns">
+    <button class="zbtn" type="button" id="zmusic" aria-pressed="true" aria-label="Müziği durdur" title="Müzik"><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 6 6M22 9l-6 6"/></svg></button>
     <button class="zbtn" type="button" data-zclose aria-label="Kapat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
   </div>
+  <audio id="zaudio" src="assets/zeytin/zeytico-muzik.m4a" preload="none" loop></audio>
   <div class="zbody">
     <div class="zchoices" data-zview="choices">
       <button class="zchoice" type="button" data-zgo="zeytin">
         <span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="14" rx="5" ry="6.5"/><path d="M12 7.5c0-2 1-3.5 3-4.5"/><path d="M15 3c2 0 3.5.8 4 2.5-1.8.6-3.4.2-4-2.5Z"/></svg></span>
-        <b>Zeytin</b>
-        <span>Zeytin çalışmaları</span>
+        <b>Zeytin &amp; Zeytinyağı</b>
+        <span>Zeytinyağı markası</span>
       </button>
       <button class="zchoice" type="button" data-zgo="hidroponik">
         <span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-3.5-2.5-6-6.5-6 0 3.5 2.5 6 6.5 6Z"/><path d="M12 14c0-3 2.2-5.5 6-5.5 0 3-2.2 5.5-6 5.5Z"/><path d="M6 21h12"/></svg></span>
@@ -583,8 +595,13 @@
       </button>
     </div>
     <div class="zpanel" data-zview="zeytin" hidden>
-      <h3><button class="zbtn" type="button" data-zback aria-label="Seçeneklere dön"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>Zeytin</h3>
-      <div class="zsoon">İçerik yakında eklenecek.</div>
+      <h3><button class="zbtn" type="button" data-zback aria-label="Seçeneklere dön"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>Zeytin &amp; Zeytinyağı</h3>
+      <p>Zeytico zeytinyağı markası için hazırlanan görseller.</p>
+      <div class="zgal">
+        <a href="assets/zeytin/zeytico-1.jpg" target="_blank" rel="noopener"><img src="assets/zeytin/zeytico-1.jpg" alt="Zeytico logolu zeytinyağı şişesi" loading="lazy"></a>
+        <a href="assets/zeytin/zeytico-2.jpg" target="_blank" rel="noopener"><img src="assets/zeytin/zeytico-2.jpg" alt="Zeytico 'Yakında' tanıtım görseli" loading="lazy"></a>
+        <a href="assets/zeytin/zeytico-3.jpg" target="_blank" rel="noopener"><img src="assets/zeytin/zeytico-3.jpg" alt="Zeytico logosu ve dökülen zeytinyağı" loading="lazy"></a>
+      </div>
     </div>
     <div class="zpanel" data-zview="hidroponik" hidden>
       <h3><button class="zbtn" type="button" data-zback aria-label="Seçeneklere dön"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>Hidroponik Tarım</h3>
@@ -664,19 +681,31 @@
     var zopen = document.getElementById('zeytico-open');
     if (zdlg && zopen && typeof zdlg.showModal === 'function') {
       var zviews = zdlg.querySelectorAll('[data-zview]');
-      var zvideo = zdlg.querySelector('video');
+      var zvids = zdlg.querySelectorAll('video');
+      var zstop = function () { zvids.forEach(function (v) { v.pause(); }); };
+      var zaudio = document.getElementById('zaudio');
+      var zmusic = document.getElementById('zmusic');
+      var zmusicOn = true;
+      var zsetMusic = function (on) {
+        zmusicOn = on;
+        zmusic.setAttribute('aria-pressed', String(on));
+        zmusic.setAttribute('aria-label', on ? 'Müziği durdur' : 'Müziği çal');
+        if (on) { var pr = zaudio.play(); if (pr && pr.catch) pr.catch(function () {}); } else { zaudio.pause(); }
+      };
+      zmusic.addEventListener('click', function () { zsetMusic(!zmusicOn); });
+      zvids.forEach(function (v) { v.addEventListener('play', function () { zsetMusic(false); }); });
       var zshow = function (name) {
         zviews.forEach(function (v) { v.hidden = v.dataset.zview !== name; });
-        if (name !== 'hidroponik' && zvideo) zvideo.pause();
+        zstop();
         var f = zdlg.querySelector('[data-zview="' + name + '"] button');
         if (f) f.focus();
       };
-      zopen.addEventListener('click', function () { zshow('choices'); zdlg.showModal(); zshow('choices'); });
+      zopen.addEventListener('click', function () { zshow('choices'); zdlg.showModal(); zshow('choices'); zaudio.currentTime = 0; zsetMusic(true); });
       zdlg.querySelectorAll('[data-zgo]').forEach(function (b) { b.addEventListener('click', function () { zshow(b.dataset.zgo); }); });
       zdlg.querySelectorAll('[data-zback]').forEach(function (b) { b.addEventListener('click', function () { zshow('choices'); }); });
       zdlg.querySelector('[data-zclose]').addEventListener('click', function () { zdlg.close(); });
       zdlg.addEventListener('click', function (e) { if (e.target === zdlg) zdlg.close(); });
-      zdlg.addEventListener('close', function () { if (zvideo) zvideo.pause(); zopen.focus(); });
+      zdlg.addEventListener('close', function () { zstop(); zaudio.pause(); zopen.focus(); });
     }
 
     requestAnimationFrame(function () { requestAnimationFrame(function () { document.documentElement.classList.add('loaded'); }); });
