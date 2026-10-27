@@ -2,6 +2,19 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<script>
+  // Yeşert (/yesert) ilan bağlantıları: GitHub Pages dinamik adresleri bilmez.
+  // /yesert/makineler/<ilan> açılınca ilan sayfası şablonunu aynı adreste yükler; diğer adreslerde bu sayfa normal görünür.
+  (function () {
+    var m = location.pathname.match(/^\/yesert\/makineler\/([^\/]+)\/?$/);
+    if (!m) return;
+    document.documentElement.style.visibility = 'hidden';
+    fetch('/yesert/makineler/%5Bid%5D.html')
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (html) { document.open(); document.write(html); document.close(); })
+      .catch(function () { document.documentElement.style.visibility = ''; });
+  })();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sayfa bulunamadı · Osman Er</title>
 <meta name="robots" content="noindex">
