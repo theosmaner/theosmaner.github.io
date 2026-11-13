@@ -4,11 +4,11 @@
 
 ## Hakkında
 
-- [Osman Er — kişisel site](https://theosmaner.github.io/): özgeçmiş, sertifikalar, girişimler ve iletişim
+- [Osman Er kişisel sitesi](https://theosmaner.github.io/): özgeçmiş, sertifikalar, girişimler ve iletişim
 
 ## Biyosistem mühendisliği yazıları
 
-- [Biyosistem Mühendisliği Nedir?](https://theosmaner.github.io/blog/biyosistem-muhendisligi-nedir/): Biyosistem mühendisliği; bitki, hayvan, toprak ve su gibi canlı sistemlere mühendislik uygulayan lisans bölümüdür. Tarım makineleri, sulama, tarımsal yapılar, enerji ve otomasyon konularını tek programda toplar.
-- [Biyosistem Mühendisliği Dersleri Nelerdir?](https://theosmaner.github.io/blog/biyosistem-muhendisligi-dersleri/): Biyosistem mühendisliğinde ilk yıl matematik, fizik ve kimya gibi temel dersler okutulur. İkinci yıldan itibaren hidrolik, malzeme bilgisi, teknik resim, ölçme tekniği, tarım makineleri ve sulama dersleri başlar.
-- [Biyosistem Mühendisi Ne İş Yapar?](https://theosmaner.github.io/blog/biyosistem-muhendisi-ne-is-yapar/): Biyosistem mühendisi; tarım makinelerini, sulama sistemlerini, seraları, hayvan barınaklarını ve tarımsal enerji tesislerini tasarlar, projelendirir ve işletir. Kamuda da özel sektörde de çalışabilir.
-- [Biyosistem Mühendisliği ile Ziraat Mühendisliği Arasındaki Fark](https://theosmaner.github.io/blog/biyosistem-muhendisligi-ziraat-muhendisligi-farki/): Ziraat mühendisliği bitkinin ve hayvanın kendisine, yani yetiştirme, ıslah, koruma ve beslemeye odaklanır. Biyosistem mühendisliği ise üretimi sağlayan makineye, suya, yapıya ve enerjiye, yani işin mühendislik altyapısına odaklanır.
+- [Biyosistem Mühendisliği Nedir?](https://theosmaner.github.io/blog/biyosistem-muhendisligi-nedir/): Biyosistem mühendisliği tarımın mühendislik tarafıdır. Bitkiye suyu götüren sistemi ve tarlaya giren makineyi tasarlamayı öğretir. Dört yıllık bir lisans bölümüdür, sayısal puanla öğrenci alır.
+- [Biyosistem Mühendisliği Dersleri Nelerdir?](https://theosmaner.github.io/blog/biyosistem-muhendisligi-dersleri/): Biyosistem mühendisliğinde ilk yıl matematik ve fizik gibi temel dersler okutulur. İkinci yılda hidrolik ve teknik resim gibi mühendislik dersleri başlar, yanına tarım makineleri ile sulama eklenir.
+- [Biyosistem Mühendisi Ne İş Yapar?](https://theosmaner.github.io/blog/biyosistem-muhendisi-ne-is-yapar/): Biyosistem mühendisi sulama sistemi, tarım makinesi ve sera gibi tarımsal tesisleri tasarlar ve işletir. Kamuda da özel sektörde de çalışır.
+- [Biyosistem Mühendisliği ile Ziraat Mühendisliği Arasındaki Fark](https://theosmaner.github.io/blog/biyosistem-muhendisligi-ziraat-muhendisligi-farki/): Ziraat mühendisliği bitkinin ve hayvanın kendisiyle ilgilenir: yetiştirme ve koruma. Biyosistem mühendisliği üretimin altyapısıyla ilgilenir: makine, sulama, yapı ve enerji.
